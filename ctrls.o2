@@ -1,0 +1,6 @@
+% const disexp=2.282 a=25.0 dis=-0.3  dd=(disexp+dis)/a/sqrt(3.0)
+% const da=0
+STRUC   ALAT={a} DALAT={da} PLAT= 0 .5 .5   .5 0 .5    .5 .5 0
+  NBAS= 2  NSPEC=1
+SITE    ATOM=O POS=-.5*{dd} -.5*{dd} -.5*{dd} 
+        ATOM=O POS=.5*{dd} .5*{dd} .5*{dd} 

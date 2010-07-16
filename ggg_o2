@@ -1,0 +1,9 @@
+#!/usr/bin/gnuplot -persist
+set xrange [-.3+2.282: 0.4+2.282]
+plot  "CASE1_pwemax2/dat" using ($5+2.282):($9) with lp, \
+      "CASE2_pwemax3/dat" using ($5+2.282):($9) with lp, \
+      "CASE3_pwemax5/dat" using ($5+2.282):($9) with lp, \
+      "CASE4_pwemax9/dat" using ($5+2.282):($9) with lp
+set term postscript enhanced color
+set output "pl.eps"
+replot

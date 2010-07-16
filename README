@@ -1,0 +1,20 @@
+Basis set tests for O2 molecule in supercell.
+commit 3824426011c2e9c2f8ec2c4d913c0a17af729405 in a branch TestNewCtrlgen 
+
+ctrlgen.py generates ctrl.o2 from ctrls.o2.
+
+Then ctrl.o2 are copied to CASE2_pwemax2.
+Take diff of ctrl.o2 and CASE2_pwemax2/ctrl.o2.
+
+1. In CASE2_pwemax2/, I did tcsh ctrl.o2, 
+   which is to determine optimmum distance.
+   save.o2 is the final results.
+
+2. I did similar calculations with different pwemax, (and also a
+   little difference in addition).
+
+3.In CASE4_pwemax=0, I only did calculation with dis=0
+
+
+ggg_o2: distance vs. total energy
+ggg_o2_pwemax: 1/pwemax**3 v.s. total energy
